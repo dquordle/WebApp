@@ -1,0 +1,71 @@
+html {
+    background-color: rgb(230, 230, 230);
+}
+
+#sessions-list {
+    /*margin-top: 40px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    grid-area: sessions;
+    justify-self: stretch;
+}
+
+#images-list {
+    /*margin-top: 40px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    grid-area: imageList;
+    justify-self: stretch;
+}
+
+table {
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+
+hr {
+    height: 2px;
+    background-color: #5237d5;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 15px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 4px;
+}
+
+.container {
+    display: grid;
+    /*grid-template-columns: 400px 400px 400px 400px 400px;*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". . . . ."
+    ". avatar User . ."
+    ". avatar sessions sessions ."
+    ". upload . . ."
+    ". imageList imageList imageList ."
+    ". sout . . .";
+    gap: 20px;
+}
+#image {
+    grid-area: avatar;
+}
+
+#User {
+    grid-area: User;
+}
+
+#upload {
+    grid-area: upload;
+}
+
+#sout {
+    grid-area: sout;
+}
+
+

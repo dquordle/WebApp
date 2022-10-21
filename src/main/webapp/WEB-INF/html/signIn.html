@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Login Page</title>
+<meta charset="UTF-8">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+.line {
+    position: fixed; /* Фиксированное положение */
+    left: 0; top: 0; /* Левый нижний угол */
+    width: 100%;
+    background-image: #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+input[type="email"], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.my-form {
+    position: fixed; /* Фиксированное положение */
+    right: 0;
+    width: 100%;/* Левый нижний угол */
+    padding: 400px;
+    text-align: center;
+}
+
+.footer {
+    padding: 10px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #1abc9c; /* Grey background */
+    color: white;
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="line">
+    <div class="header">
+        <h1>FWA</h1>
+        <p>ex00</p>
+    </div>
+    
+    <div class="navbar">
+        <a href="signOut">Cancel</a>
+    </div>
+</div>
+    
+      <div class="my-form">
+          <form action="" method="post">
+      
+              <label for="email"><b>Email</b></label>
+              <br>
+              <input type="email" id="email" name="email" placeholder="Enter Email" required="true"/> <br> <br>
+            
+              <label for="pass"><b>Password</b></label>
+              <br>
+              <input type="Password" id="pass" name="pass" minlength="8" placeholder="Enter Password"required="true"> <br>
+              <br>
+      
+              <button type="submit">Login</button>
+              
+            </form>
+      </div>
+
+
+
+
+    <!-- <img src=https://klike.net/uploads/posts/2022-05/1652622048_10.jpg> -->
+  
+    <div class="footer">
+        <h4>Kbrady feat Dquordle</h4>
+        <h4>2022</h4>
+    </div>
+
+
+</body>
+</html>
+
